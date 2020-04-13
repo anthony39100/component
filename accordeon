@@ -1,0 +1,9 @@
+//je selectionne mon boutton
+var button=document.querySelectorAll('.accordeon');
+for(i=0;i<button.length;i++){
+    button[i].addEventListener('click',function(e){
+     
+        e.target.nextSibling.nextSibling.classList.toggle('masquer')
+    })
+}
+//menu accordeon pour dashboard
