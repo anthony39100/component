@@ -1,9 +1,10 @@
-      <div class="container  bg-primary  text-white menu-fonction w-50  ">
-        <div class="row  pb-3 pt-3   ">
-          <div class="col-6">
-            <h1 class="menu-fonction">Menu</h1>
-          </div>
-          <div class="col-6 w-100  align-self-center  h-100 ">
-            <p class="accordeon pointer mt-3 w-100 d-flex justify-content-end">en savoir plus</p>
-          </div>
-        </div>ur dashboard
+//je selectionne mon boutton
+var button=document.querySelectorAll('.accordeon');
+for(i=0;i<button.length;i++){
+    button[i].addEventListener('click',function(e){
+      
+
+  e.target.parentNode.parentNode.parentNode.childNodes[3].classList.toggle('masquer')
+    })
+}
+//menu accordeon pour dashboard
